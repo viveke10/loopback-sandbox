@@ -1,0 +1,36 @@
+{
+  "name": "Project",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "properties": {
+    "Title": {
+      "type": "string"
+    },
+    "Created": {
+      "type": "string"
+    },
+    "Type": {
+      "type": "string"
+    },
+    "OwnerId": {
+      "type": "string"
+    },
+    "AssignedTo": {
+      "type": "string"
+    },
+    "CompletionDate": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "Tasks": {
+      "type": "hasMany",
+      "model": "Task",
+      "foreignKey": "ProjectId"
+    }
+  },
+  "acls": [],
+  "methods": []
+}
